@@ -14,7 +14,7 @@ categorieElement.innerText = article.categorie ?? "(aucune catégorie)";
 const descriptionElement = document.createElement("p");
 descriptionElement.innerText = article.description ?? "(Pas de description pour le moment)";
 const stockStatElement = document.createElement("p");
-stockStatElement.innerText = article.disponibilité = "oui" ? "En stock" : "Rupture de stock" ; 
+stockStatElement.innerText = `Disponibilité: ${article.disponibilité = "oui" ? "En stock" : "Rupture de stock"} `; 
 //Rattachement de nos balises au DOM
 const sectionFiches = document.querySelector(".fiches");
 sectionFiches.appendChild(imageElement);
